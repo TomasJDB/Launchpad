@@ -1,0 +1,195 @@
+{
+    "info": {
+        "name": "dml_001",
+        "index": "secure-loan-process-step1"
+    },
+    "models": [
+    "RBMCashLoan"
+    ],
+    "views": {
+        
+        "secure-loan-process-step1":{
+            "logic": {
+                "default":{
+                    "prev" : null,
+                    "next" : "secure-loan-process-step2"
+                    
+                    
+                }
+            },
+            
+            "data" :{
+                "business_name" :{
+                    "type" : "name",
+                    "required" : true
+                },
+                
+               "first_name" : {
+                    "type" : "name",
+                    "required" : true
+                },
+              
+                "last_name" : {
+                    "type" : "name",
+                    "required" : true
+                },
+                
+                "email" : {
+                    "type" : "email",
+                    "required" : true
+                },
+                     
+                
+                 
+                "primary_phone" : {
+                    "type" : "phone",
+                    "required" : true,
+                    "components" : [
+                    "primary_phone_area",
+                    "primary_phone_exchange",
+                    "primary_phone_extension"
+                    ]
+                }
+                
+            }
+        },
+       
+        "secure-loan-process-step2" :{
+            "logic": {
+                "default" : {
+                    "prev" : "secure-loan-process-step1",
+                    "next" : "submit"
+                }
+            },
+            
+            "data" : {
+                
+                
+                "accepting_credit_card_length" :{
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "Greater than 1 year",
+                    "Less than 1 year"
+                    ]
+                },
+                    
+                "credit_card_volume" :{
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "Less than $1000",
+                    "$1000-$3000",
+                    "$3000-$6000",
+                    "$6000-$10000",
+                    "$10000-$20000",
+                    "$20,000 Plus"
+                    ]
+                },
+                
+                "loan_amount" : {
+                    "type" : "integer",
+                    "required" : true,
+                    "range" : {
+                        "min" : 0
+                    }
+                },
+                
+                "loan_type" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "payroll", 
+                    "remodeling",
+                    "advertsing",   
+                    "expanding",
+                    "new equipment",
+                    "hire staff",
+                    "pay off debts",
+                    "start up",
+                    "other"
+                    ]
+                    
+                }
+            }
+    
+        },
+            
+            
+       
+        "secure-loan-process-step3": {
+            "logic": {
+                "default": {
+                    "prev": "secure-loan-process-step2",
+                    "next": "submit"
+                }
+            },
+            "data": {
+                "credit_score" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "excellent",
+                    "vgood",
+                    "good",
+                    "fair",
+                    "poor"
+                    ]
+                },
+                
+                "credit_consultation" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [ 
+                    "yes",
+                    "no"
+                    ]
+                },
+                
+                "credit_imporvement" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "yes",
+                    "no"
+                    ]
+                },
+                "terms" : {
+                    "type" : "checkbox",
+                    "required" : true
+                }
+            }
+        },
+        
+       
+       
+        "submit" : {
+            "logic": {
+                "default" : {
+                    "prev" : "secure-loan-process-step4",
+                    "next" : null
+                }
+            }
+        },
+        "approved" : {
+            "logic": {
+                "default": {
+                    "prev": "submit",
+                    "next": null
+                }
+            },
+            "data" : {
+        }
+        },
+        "declined" : {
+            "logic": {
+                "default": {
+                    "prev": "submit",
+                    "next": null
+                }
+            },
+            "data" : {
+        }
+        }
+    }
+}

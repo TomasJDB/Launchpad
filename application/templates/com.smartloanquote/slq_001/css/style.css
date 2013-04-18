@@ -1,0 +1,690 @@
+/* Css Reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { 
+    margin:0; 
+    padding:0; 
+    border:0; 
+    outline:0; 
+    font-size:100%; 
+    vertical-align:baseline; 
+}
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+    display:block;
+}
+
+/**
+ * Form Content
+*/
+#rbm_personalloan {
+    margin: 0px auto;
+    width: 360px !important;
+    min-height: 100px;
+    text-align: center;
+    font-size: 12px;
+    display:inline-block;
+    *display:block;
+    border: none;
+    zoom: 1;
+}
+#rbm_personalloan_header {
+    position: relative;
+    min-height: 18px;
+    padding: 0px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+}
+#rbm_personalloan_header p {
+    margin-bottom: 10px;
+}
+#rbm_personalloan_header .progress {
+    width: 300px;
+    height: 11px;
+    background: url(/slq_001/img/progress_bar.png) no-repeat;
+    margin-top: 5px;
+    position: absolute;
+    left: 40px;
+    top: 35px;
+    margin-top: 17px;
+}
+#rbm_personalloan_content {
+    padding: 5px 5px 0px 20px;
+    z-index: 100;
+    text-align: left;
+    margin-top: 40px;
+}
+#rbm_personalloan_content .section {
+    position: relative;
+    display: inline-block;
+    margin: 0px 20px 10px 0px;
+    text-align: left;
+    *display: inline;
+    *zoom: 1;
+}
+#rbm_personalloan_content .center {
+    text-align: center;
+}
+#rbm_personalloan_content select {
+    padding: 4px;
+    border: 1px solid #acacac;
+    background: #FAFAFA;
+    border-radius: 2px;
+}
+#rbm_personalloan_content select.half {
+    width: 143px;
+}
+#rbm_personalloan_content select.full {
+    width: 310px;
+}
+#rbm_personalloan_content select.full_minus {
+    width: 250px;
+}
+#rbm_personalloan_content select.date_drop {
+    width: 140px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+#rbm_personalloan_content input[type=radio] {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#rbm_personalloan_content input[type=text] {
+    background: #fafafa;
+}
+#rbm_personalloan_content input[type=text].quarter {
+    width: 80px;
+}
+#rbm_personalloan_content input[type=text].half {
+    width: 140px;;
+}
+#rbm_personalloan_content input[type=text].full {
+    width: 230px;
+}
+#rbm_personalloan_content input[type=text].full_plus {
+    width: 310px;
+}
+#rbm_personalloan_content input[type=text].calendar {
+    background-image:url(/slq_001/img/icon-cal.jpg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding-right:25px;
+}
+#rbm_personalloan_content input[type=text].calendar.quarter {
+    width: 35px;
+}
+#rbm_personalloan_content input[type=text].calendar.half {
+    width: 115px;
+}
+#rbm_personalloan_content input[type=text].calendar.full {
+    width: 210px;
+}
+#rbm_personalloan_content .quarter {
+    width: 65px;
+}
+#rbm_personalloan_content .half {
+    width: 140px;
+
+}
+#rbm_personalloan_content .full {
+    width: 310px;
+}
+#rbm_personalloan_content .full_plus {
+    width: 310px;
+}
+#rbm_personalloan_content label {
+
+    color: 
+        #fff;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    margin: 0 0 5px 0;
+
+    display: block;
+    line-height: 110%;
+}
+#rbm_personalloan_content label span.subheading {
+    font-weight: normal;
+    font-style: italic;
+    color: #88c3ed;
+}
+#rbm_personalloan_content .privacy_text {
+    font-size: 11px;
+    font-weight: normal;
+    display: block;
+    margin: 0px;
+    line-height: 100%;
+    width: 215px;
+    float: right;
+    margin-left: 5px;
+    color: white;
+    width: 240px;
+}
+#rbm_personalloan_content  .privacy_text a {
+    font-weight: bold;
+    color: 
+        #87b1c6;
+    text-decoration: underline;  
+}
+#rbm_personalloan_content .privacy_text.error a {
+    color: #B94A48;
+}
+#rbm_personalloan_content .debt_consent {
+    width: 215px;
+    float: right;
+    margin: 0px;
+    margin-left: 5px;
+    font-size: 110%;
+    font-weight: bold;
+    padding-top: 10px;
+}
+#rbm_personalloan_content .sm_gray {
+    color: #6b6b6b;
+    font-size: 90%;
+    font-weight: normal;
+}
+#rbm_personalloan_content .lg_gray {
+    color: #6b6b6b;
+    font-size: 120%;
+    font-weight: bold;
+    margin: 0px 2px;
+}
+#rbm_personalloan_content .phone,
+#rbm_personalloan_content .datebox {
+    width: 80px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+#rbm_personalloan_content .datebox {
+    width: 55px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+#rbm_personalloan_content .color_box {
+    border-radius: 3px;
+    background: #394e7b;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    line-height: 150%;
+
+}
+#rbm_personalloan_content .headline_shadow {
+    color: white;
+    margin-top: 5px;
+    font: bold 14px Arial, Helvetica;
+    text-align: left;
+}
+#rbm_personalloan_content .emphasis {
+    color: #5D9EBB;
+}
+#rbm_personalloan_footer {
+    height: 60px;
+    padding: 20px 40px 0 0;
+}
+#rbm_personalloan_footer input[type=button], #rbm_personalloan_footer input[type=submit] {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 0px;
+    margin: 0px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+}
+#rbm_personalloan_back_btn {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 2px 0 0 115px;
+    padding: 10px 25px 11px 25px;
+    float: left;
+    background: url(/slq_001/img/bg-btn-blue.jpg) repeat-x;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    border: none;
+    cursor: pointer;
+}
+#rbm_personalloan_next_btn {
+    background: url(/slq_001/img/bg-btn-next.jpg) 0 0 repeat-x;
+    height: 40px !important;
+    box-shadow: 0 0 5px #63b0d6;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 0 25px !important;
+    color: 
+        #fff;
+    cursor: pointer;
+    font: bold 14px Tahoma, Geneva, sans-serif;
+    text-transform: uppercase;
+
+}
+#rbm_personalloan_next_btn.single {
+    text-shadow: 1px 1px 5px 
+        #333 !important;
+    background: url(/slq_001/img/bg-btn.png) no-repeat;
+    width: 289px !important;
+    height: 89px !important;
+    border: 4px solid #318cb9 !important;
+    border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    -webkit-border-radius: 20px !important;
+    box-shadow: 0 0 10px #1d5d7c;
+    font: bold 31px Tahoma, Geneva, sans-serif;
+    color: #fff;
+    padding: 0 32px 0 0 !important;
+    background-color:rgb(43,  90,  15);
+}
+#rbm_personalloan_next_btn.single:hover {
+    text-shadow: -1px -1px 1px #1d5d7c !important;
+}
+#rbm_personalloan_submit_btn {
+    background: url(/slq_001/img/submit_btn.png) repeat-x;
+    border-radius: 5px;
+    color: 
+        #fff;
+    cursor: pointer;
+    font: bold 16px Arial, Helvetica, sans-serif;
+    height: 60px !important;
+    margin: 10px 0 0 0;
+    text-shadow: 0 1px 0 
+        #a35e04;
+    width: 260px;
+    margin-left: 20px!important;
+}
+#rbm_personalloan_privacy_content {
+    width: 480px;
+    height: 540px;
+}
+#rbm_personalloan_conditions_content {
+    width: 480px;
+    height: 540px;
+}
+#rbm_personalloan_check_content {
+    width: 355px;
+    height: 355px;
+}
+#rbm_personalloan_ssn_content {
+    width: 355px;
+    height: 355px;
+}
+
+#rbm_personalloan_content .errorBox {
+    width:  270px;
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+    *display: inline;
+    *zoom: 1;
+    background: #F2DEDE;
+    border: 1px solid #B94A48;
+    border-radius: 4px;
+    padding: 5px;
+    color: #B94A48;
+    font-size: 12px;
+    z-index: 10;
+}
+
+#rbm_personalloan_content .errorBox h2 {
+    background:  url(/slq_001/img/error_x_sm.png) no-repeat top left;
+    padding-left: 18px;
+    font-weight: bold;
+    font-size: 110%;
+    margin-bottom: 5px;
+    z-index: 20;
+}
+
+#rbm_personalloan_content .errorBox ul,
+#rbm_personalloan_content .errorBox ul li {
+    list-style-position: inside !important;
+    z-index: 30;
+}
+#rbm_personalloan_content .error {
+    color: #B94A48;
+}
+#rbm_personalloan_content select.error,
+#rbm_personalloan_content input[type=checkbox].error,
+#rbm_personalloan_content input[type=text].error {
+    border: 1px solid #B94A48;
+}
+
+.rbm_personalloan_overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    background: url(/slq_001/img/blk_bg.png) repeat;
+    z-index: 200;
+    display: none;   
+    color: black;
+    font-weight: normal;
+}
+.rbm_personalloan_overlay_content {
+    position: relative;
+    width: 500px;
+    height: 100px;
+    min-height: 500px; /*Prevent IE 8 From crashing when clicked, keep this line */
+    margin: 100px auto;
+    overflow: visible;/*Prevent IE 8 From crashing when clicked, keep this line */
+    text-align: left;
+}
+.rbm_personalloan_overlay_txt {
+    color: black;
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    border: 5px solid #555;
+    overflow: auto;/*Prevent IE 8 From crashing when clicked, keep this line */
+    max-height: 100%;
+}
+.rbm_personalloan_overlay_close {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    background: url(/slq_001/img/close-btn.png) no-repeat;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+.rbm_personalloan_overlay_content h1 {
+    margin: 10px 0px;
+    font-weight: bold;
+    font-size: 120%;
+}
+.rbm_personalloan_overlay_content h2 {
+    margin: 10px 0px;
+    font-size: 110%;
+    font-style: italic;
+}
+.rbm_personalloan_overlay_content p {
+    margin: 10px 0px;   
+}
+
+/**
+ * Plain Page CSS
+*/
+#rbm_personalloan_plain_container {
+    padding-bottom: 10px;
+    border: 1px solid #dfdfdf;
+    background: #fff;
+    z-index: 100;
+    margin: 0px auto;
+    width: auto !important;
+    border-radius: 5px;
+    min-height: 300px;
+    text-align: center;
+    font-size: 12px;
+    display:inline-block;
+    *display:block;
+    zoom: 1;
+}
+#rbm_personalloan_plain_container img {
+    margin-bottom: -3px;
+}
+#rbm_personalloan_plain_container .section {
+    width: 270px;
+    display: inline-block;
+    margin: 0px;
+    *display: inline;
+    *zoom: 1;
+}
+#rbm_personalloan_plain_container .center {
+    text-align: center;
+}
+#rbm_personalloan_plain_container .loader {
+    padding: 15px;
+}
+#rbm_personalloan_plain_container ul {
+    list-style-position: outside;
+    list-style-image: url(/slq_001/img/checkmark_inactive.png) !important;
+    font-style: italic;
+    color: #9d9d9d;
+    margin: 10px;
+    text-align: left;
+}
+#rbm_personalloan_plain_container ul li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+#rbm_personalloan_plain_container ul li.active {
+    list-style-image: url(/slq_001/img/checkmark_active.png) !important; 
+}
+#rbm_personalloan_plain_container .color_box {
+    width: 260px;
+    background: #1e2a44;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    line-height: 150%;
+}
+#rbm_personalloan_plain_container .fine_print {
+    color: #6b6b6b;
+    padding: 10px;
+    font-size: 90%;
+}
+#rbm_personalloan_plain_container .sm_gray {
+    color: #6b6b6b;
+    margin: 0px 2px;
+}
+#rbm_personalloan_plain_container .lg_gray {
+    color: #6b6b6b;
+    font-size: 120%;
+    font-weight: bold;
+    margin: 0px 2px;
+}
+#rbm_personalloan_plain_container .center {
+    text-align: center;
+}
+#rbm_personalloan_plain_container .padded {
+    padding: 15px;
+}
+#rbm_personalloan_plain_container .headline {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 125%;
+}
+#rbm_personalloan_plain_container .green {
+    color: #74934d;
+}
+#rbm_personalloan_plain_container .navy {
+    color: #1e2a44;
+}
+#rbm_personalloan_plain_container .teal {
+    color: #4896ad;
+}
+#rbm_personalloan_plain_container .red {
+    background: #9B2426;
+}
+
+/** Lightbox **/
+#rbm_personalloan_lightbox_content {
+    width: 625px;
+    height: 540px;
+    margin-top: 100px !important;
+}
+#lb-top-1 {
+    background: url(/slq_001/img/bg-top1.png) 0 0 repeat;
+    height: 78px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #c9763b;
+}
+#lb-top-2 {
+    background: url(/slq_001/img/bg-top.png) 0 0 repeat;
+    border-bottom: 1px solid #7d2006;
+    height: 45px;
+}
+#lb-top-1 div {
+    background: url(/slq_001/img/woman.png) -10px 0 no-repeat;
+    position: absolute;
+    height: 145px;
+    width: 249px;
+}
+h1.lb-status,
+h1.lb-status_small {
+    background: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 3px 5px #693b19;
+    color: #9b9b9b;
+    display: block; 
+    margin: 0 auto;
+    padding: 4px 25px;
+
+}
+h1.lb-status {
+    font: bold 17px Arial, Helvetica, sans-serif;
+    width: 250px;
+}
+h1.lb-status_small {
+    font: bold 14px Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 200px;
+}
+.green {
+    color: #6fbd45;
+}
+.blue {
+    color: #2c6ba9;
+}
+.close,
+.close_small {
+    background: url(/slq_001/img/close.png) 50% 50% no-repeat;
+    border-radius: 25px;
+    border: 5px solid #fff;
+    height: 18px;
+    position: absolute;
+    width: 18px;
+}
+.close {
+    margin: -15px 0 0 615px;
+}
+.close_small {
+    cursor: pointer;
+    margin: -15px 0 0 290px;
+    text-indent: 100;
+}
+h2.lb-secure,
+h2.lb-secure_small {
+    color: #fff;    
+    text-shadow: 0 1px 2px #693b19;
+}
+h2.lb-secure {
+    font: 16px Arial, Helvetica, sans-serif;
+    margin: 12px 0 0 165px;
+}
+h2.lb-secure_small {
+    font: 15px Arial, Helvetica, sans-serif;
+    margin: 20px 5px 0 5px;
+    text-align: center;
+}
+h3.lb-wait,
+h3.lb-wait_small {
+    color: #fff;
+    text-shadow: 0 1px 2px #693b19;
+}
+h3.lb-wait {
+    font: 18px Arial, Helvetica, sans-serif;
+    padding: 10px 0 0 165px;
+}
+h3.lb-wait_small {
+    font: 14px Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5px 0 0 0;
+}
+.lb-txt,
+.lb-txt2 {
+    line-height: 18px;
+    margin: 20px 0;
+    padding: 0 20px;
+    text-align: center; 
+}
+
+.lb-txt {
+    font: bold 13px Arial, Helvetica, sans-serif;
+}
+.lb-txt2 {
+    font: bold 16px Arial, Helvetica, sans-serif;
+}
+.lb-txt2_small {
+    font: bold 14px Arial, Helvetica, sans-serif;
+}
+#lb-wr-load {
+    border-radius: 3px;
+    margin: 0 auto;
+
+}
+#lb-wr-load {
+    height: 30px;
+    width: 240px;
+}
+#lb-wr-load div {
+    background: url(/slq_001/img/loading.png) 50% 0 no-repeat;
+    border: 1px solid #a7c7d6;
+    border-radius: 3px;
+    height: 25px;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+/* footer */
+#lb-footer {
+    background: url(/slq_001/img/bg-lb-footer.png) 0 0 repeat-x #f6f6f6;
+    color: #909090;
+    text-align: center;
+    font: 12px Arial, Helvetica, sans-serif;
+    line-height: 16px;
+    padding: 12px 20px 10px 20px;
+}
+#lb-footer h4 {
+    background: url(/slq_001/img/bg-lb-footer-title.png) 0 100% repeat-x;
+    display: block;
+    font: bold 15px Arial, Helvetica, sans-serif;
+    padding: 0 30px 12px 30px;
+    margin: 0 auto 10px auto;
+    text-shadow: 0 1px 0 #fff;
+    width: 510px;
+}
+
+.first_page_footer{
+    position: absolute;
+    right: 10px;
+    top: 90px;
+    padding-right: 0px !important; 
+    padding-top: 0px !important; 
+}
+.section .rbm_personalloan_overlay_open{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: white;
+}
+.first_page_container{
+    padding-left: 0px !important;
+    margin-top: 0px !important;
+}
+.cover{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    width: auto;
+    height: auto;
+    margin: 0px;
+}
+
+.first_header{
+    width: 420px !important;
+}
+.first_container{
+    background-position: left top !important;
+}

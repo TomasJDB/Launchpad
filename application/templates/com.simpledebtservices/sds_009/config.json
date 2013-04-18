@@ -1,0 +1,109 @@
+{
+    "info": {
+        "name": "sds_009",
+        "index": "step1"
+    },
+    "models": [
+        "RBMConsumerDebt"
+    ],
+    "views": {
+        "step1": {
+            "layout": "form",
+            "logic": {
+                "default": {
+                    "prev": null,
+                    "next": "submit"
+                }
+            },
+            "data": {
+                "first_name" : {
+                    "type" : "name",
+                    "required" : true
+                },
+                "last_name" : {
+                    "type" : "name",
+                    "required" : true
+                },
+                "email" : {
+                    "type" : "email",
+                    "required" : true
+                },
+                "home_phone" : {
+                    "type" : "phone",
+                    "required" : true,
+                    "components" : [
+                        "home_phone_area",
+                        "home_phone_exchange",
+                        "home_phone_extension"
+                    ]
+                },
+                "zip": {
+                    "type" : "zip",
+                    "required" : true
+                },
+                "debt_amount" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                        "2500",
+                        "5000",
+                        "10000",
+                        "15000",
+                        "20000",
+                        "25000",
+                        "30000",
+                        "40000"
+                    ]
+                }
+            }
+        },
+        "submit" : {
+            "logic": {
+                "default" : {
+                    "prev" : "step1",
+                    "next" : null
+                }
+            }
+        },
+        "approved" : {
+            "logic": {
+                "default": {
+                    "prev": "submit",
+                    "next": null
+                }
+            },
+            "data" : {
+            }
+        },
+        "declined" : {
+            "logic": {
+                "default": {
+                    "prev": "submit",
+                    "next": null
+                }
+            },
+            "data" : {
+            }
+        },
+        "terms" : {
+            "logic": {
+                "default": {
+                    "prev": null,
+                    "next": null
+                }
+            },
+            "data" : {
+            }
+        },
+        "privacy" : {
+            "logic": {
+                "default": {
+                    "prev": null,
+                    "next": null
+                }
+            },
+            "data" : {
+            }
+        }
+    }
+}

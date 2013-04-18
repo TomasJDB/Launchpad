@@ -1,0 +1,503 @@
+{
+    "info": {
+        "name": "lpo_001",
+        "index": "secure-loan-application",
+        "tracking": {
+            "method": "server",
+            "campaign": 145,
+            "clickAction": "secure-loan-application"
+        }
+    },
+    "models": [
+        "RBMCashLoan",
+        "RBMPersonalLoan",
+        "RBMWilshire"
+    ],
+    "views": {
+        "test": {
+            "layout": "error",
+            "logic": {
+                "prev": null,
+                "next": null
+            },
+            "data": {
+        }
+        },
+        "secure-loan-application": {
+            "logic": {
+                "default": {
+                    "prev": null,
+                    "next": "submit"
+                }
+            },
+            "data": {
+                "loan_amount" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "300",
+                    "500",
+                    "750",
+                    "1000",
+                    "1300",
+                    "1400",
+                    "1500",
+                    "1600",
+                    "1700",
+                    "1800",
+                    "1900",
+                    "2000",
+                    "2100",
+                    "2200",
+                    "2300",
+                    "2400",
+                    "2500"
+                    ]
+                },
+                "loan_type" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "personal",
+                    "auto",
+                    "home_loc",
+                    "home_equity",
+                    "home",
+                    "boat",
+                    "rv",
+                    "medical",
+                    "cosmetic",
+                    "student",
+                    "veterinary",
+                    "business",
+                    "vacation",
+                    "home_appliance",
+                    "legal",
+                    "travel",
+                    "furniture",
+                    "debt",
+                    "tenant",
+                    "pilot",
+                    "farm",
+                    "tax",
+                    "unemployment",
+                    "vision",
+                    "dentistry",
+                    "pension"
+                    ]
+                },
+                "min_amount" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "100",
+                    "300",
+                    "500",
+                    "750",
+                    "1000",
+                    "1300",
+                    "1400",
+                    "1500",
+                    "1600",
+                    "1700",
+                    "1800",
+                    "1900",
+                    "2000",
+                    "2100",
+                    "2200",
+                    "2300",
+                    "2400"
+                    ]
+                },
+                "title" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "Mr",
+                    "Mrs",
+                    "Ms",
+                    "Miss",
+                    "Dr"
+                    ]
+                },
+                "first_name" : {
+                    "type" : "name",
+                    "required" : true
+                },
+                "middle_name" : {
+                    "type" : "name",
+                    "required" : false
+                },
+                "last_name" : {
+                    "type" : "name",
+                    "required" : true
+                },
+                "address_1" : {
+                    "type" : "address",
+                    "required" : true
+                },
+                "address_2" : {
+                    "type" : "address",
+                    "required" : false
+                },
+                "city" : {
+                    "type" : "name",
+                    "required" : true
+                },
+                "zip": {
+                    "type" : "zip",
+                    "required" : true
+                },
+                "residence_date" : {
+                    "type" : "date",
+                    "required" : true,
+                    "components" : [
+                    "residence_date_month",
+                    "residence_date_year"
+                    ],
+                    "range" : {
+                        "absolute" : {
+                            "max" : "today"
+                        }
+                    }
+                },
+                "residence_type" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "rent",
+                    "own"
+                    ]
+                },
+                "ssn" : {
+                    "type" : "ssn",
+                    "required" : true,
+                    "components" : [
+                    "ssn_1",
+                    "ssn_2",
+                    "ssn_3"
+                    ]
+                },
+                "home_phone" : {
+                    "type" : "phone",
+                    "required" : true,
+                    "components" : [
+                    "home_phone_area",
+                    "home_phone_exchange",
+                    "home_phone_extension"
+                    ]
+                },
+                "mobile_phone" : {
+                    "type" : "phone",
+                    "required" : true,
+                    "components" : [
+                    "mobile_phone_area",
+                    "mobile_phone_exchange",
+                    "mobile_phone_extension"
+                    ]
+                },
+                "contact_time" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "morning",
+                    "afternoon",
+                    "evening",
+                    "anytime"
+                    ]
+                },
+                "email" : {
+                    "type" : "email",
+                    "required" : true
+                },
+                "birthdate" : {
+                    "type" : "date",
+                    "required" : true,
+                    "components" : [
+                    "birthdate_month",
+                    "birthdate_day",
+                    "birthdate_year"
+                    ],
+                    "range" : {
+                        "absolute" : {
+                            "max" : "today -18 years"
+                        }
+                    }
+                },
+                "license_number" : {
+                    "type" : "license",
+                    "required" : true
+                },
+                "license_state" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "AK",
+                    "AL",
+                    "AZ",
+                    "AR",
+                    "CA",
+                    "CO",
+                    "CT",
+                    "DC",
+                    "DE",
+                    "FL",
+                    "GA",
+                    "HI",
+                    "IA",
+                    "ID",
+                    "IL",
+                    "IN",
+                    "KS",
+                    "KY",
+                    "LA",
+                    "MA",
+                    "MD",
+                    "ME",
+                    "MI",
+                    "MN",
+                    "MO",
+                    "MS",
+                    "MT",
+                    "NC",
+                    "ND",
+                    "NE",
+                    "NH",
+                    "NJ",
+                    "NM",
+                    "NV",
+                    "NY",
+                    "OH",
+                    "OK",
+                    "OR",
+                    "PA",
+                    "RI",
+                    "SC",
+                    "SD",
+                    "WY",
+                    "TN",
+                    "TX",
+                    "UT",
+                    "VA",
+                    "VT",
+                    "WA",
+                    "WI",
+                    "WV"
+                    ]
+                },
+                "maiden_name" : {
+                    "type" : "name",
+                    "required" : true
+                },
+                "citizen" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "true",
+                    "false"
+                    ]
+                },
+                "employ_name" : {
+                    "type" : "open",
+                    "required" : true
+                },
+                "income_type" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "disability",
+                    "pension",
+                    "unemployed",
+                    "employed",
+                    "employed_part_time",
+                    "self_employed",
+                    "military",
+                    "welfare"
+                    ]
+                },
+                "work_phone" : {
+                    "type" : "phone",
+                    "required" : true,
+                    "components" : [
+                    "work_phone_area",
+                    "work_phone_exchange",
+                    "work_phone_extension"
+                    ]
+                },
+                "employ_date" : {
+                    "type" : "date",
+                    "required" : true,
+                    "components" : [
+                    "employ_date_month",
+                    "employ_date_year"
+                    ],
+                    "range" : {
+                        "absolute" : {
+                            "max" : "today"
+                        }
+                    }
+                },
+                "military" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "true",
+                    "false"
+                    ]
+                },
+                "direct_deposit" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "true",
+                    "false"
+                    ]
+                },
+                "pay_date_1" : {
+                    "type" : "date",
+                    "required" : true,
+                    "range" : {
+                        "absolute" : {
+                            "min" : "today"
+                        }
+                    },
+                    "bankDay" : true
+                },
+                "pay_date_2" : {
+                    "type" : "date",
+                    "required" : true,
+                    "range" : {
+                        "absolute" : {
+                            "min" : "today"
+                        },
+                        "relative" : {
+                            "min" : "pay_date_1"
+                        }
+                    },
+                    "bankDay" : true
+                },
+                "pay_schedule" : {
+                    "type" : "list",
+                    "required" : true,
+                    "match" : {
+                        "start" : "pay_date_1",
+                        "end" : "pay_date_2"
+                    },
+                    "values" : [
+                    "weekly",
+                    "biweekly",
+                    "semimonthly",
+                    "monthly"
+                    ]
+                },
+                "income" : {
+                    "type" : "integer",
+                    "required" : true,
+                    "range" : {
+                        "min" : 0
+                    }
+                },
+                "bank_routing_number": {
+                    "type" : "bankRoutingNumber",
+                    "required" : true
+                },
+                "bank_name": {
+                    "type" : "bankName",
+                    "required" : true,
+                    "match" : "bank_routing_number"
+                },
+                "bank_account_type" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "checking",
+                    "savings",
+                    "both",
+                    "none"
+                    ]
+                },
+                "bank_account_number": {
+                    "type" : "bankAccountNumber",
+                    "required" : true
+                },
+                "bank_months": {
+                    "type": "list",
+                    "required": true,
+                    "values": [
+                        0,
+                        1,
+                        3,
+                        6,
+                        12,
+                        24,
+                        36,
+                        48,
+                        60,
+                        72,
+                        84,
+                        96,
+                        108,
+                        120
+                    ]
+                },
+                "credit_score" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "excellent",
+                    "vgood",
+                    "good",
+                    "fair",
+                    "poor"
+                    ]
+                },
+                "bankruptcy" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                    "no",
+                    "active",
+                    "discharged",
+                    "multiple"
+                    ]
+                },
+                "terms" : {
+                    "type" : "checkbox",
+                    "required" : true
+                },
+                "consent" : {
+                    "type" : "checkbox",
+                    "required" : true
+                }
+            }
+        },
+        "submit" : {
+            "logic": {
+                "default" : {
+                    "prev" : "secure-loan-application",
+                    "next" : null
+                }
+            }
+        },
+        "approved" : {
+            "logic": {
+                "default": {
+                    "prev": "submit",
+                    "next": null
+                }
+            },
+            "data" : {
+        }
+        },
+        "declined" : {
+            "logic": {
+                "default": {
+                    "prev": "submit",
+                    "next": null
+                }
+            },
+            "data" : {
+        }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+body,td,th {
+		font-family: Tahoma, Geneva, sans-serif;
+		font-size: 10px;
+}
+body {
+		margin-left: 0px;
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		background-color: #B9B5AA;
+}
+#container_page {
+		position: relative;
+		height: 730px;
+		width: 956px;
+		margin: auto;
+}
+#left_col {
+		position: relative;
+		height: auto;
+		width: 427px;
+		float: left;
+}
+#right_col {
+		position: relative;
+		height: auto;
+		width: 529px;
+		float: left;
+}
+#form_bg {
+		position: relative;
+		height: 400px;
+		width: 529px;
+		background-image: url(/img/form_bg.jpg);
+		background-repeat: no-repeat;
+}
+#container_footer {
+		position: relative;
+		height: 83px;
+		width: 956px;
+		clear: both;
+		background-image: url(/img/footer_bot.jpg);
+}
+#footer_content {
+		position: relative;
+		height: auto;
+		width: 600px;
+		margin: auto;
+		top: 30px;
+		text-align: left;
+		color: #666;
+		left: 155px;
+}
+#rbmOffer {
+	z-index: 100;
+	position: absolute;		
+	top: 100px;
+	left: 520px;
+}

@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url('/ccs_101/font/MyriadPro-Bold.otf'),
+        url('/ccs_101/font/MyriadPro-Bold.eot'); /* IE support */
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('/ccs_101/font/MyriadPro-Regular.otf'),
+        url('/ccs_101/font/myriadpro-regular.eot'); /* IE support */
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'EuroStile';
+    src: url('/ccs_101/font/eurosti.ttf'),
+        url('/ccs_101/font/eurosti.eot'); /* IE SUPPORT */
+    font-weight: normal;
+    font-style: normal;
+}

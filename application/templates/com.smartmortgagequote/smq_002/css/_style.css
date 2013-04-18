@@ -1,0 +1,39 @@
+body,td,th {
+		font-family: Arial, Helvetica, sans-serif;
+}
+body {
+		margin-left: 0px;
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+}
+#container {
+		position: relative;
+		height: 538px;
+		width: 882px;
+		margin: auto;
+}
+#header {
+		position: relative;
+		height: 135px;
+		width: 882px;
+}
+#form {
+		background-image: url(/img/form_bg.jpg);
+		position: relative;
+		height: 403px;
+		width: 376px;
+		float: left;
+}
+#form_content {
+		height: auto;
+		position: absolute;
+l		width: 376px;
+		margin-left: 52px;
+}
+#right_col {
+		float: left;
+		height: 403px;
+		width: 506px;
+		position: relative;
+}

@@ -1,0 +1,378 @@
+/* 
+    Document   : main
+    Created on : Mar 8, 2013, 12:07:15 PM
+    Author     : philllware
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* reset start */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    vertical-align: middle;
+    font-weight: normal;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Reset end*/
+
+/* Font Farm */
+
+
+/* Font Farm End */
+
+
+/* Basic */
+
+body{
+    font-family: Helvetica;
+}
+
+/* page structure */
+
+#wrapper{
+    position: relative;
+    width: 1000px;
+    margin: 0px auto 10px auto;
+}
+
+.inline_box{
+    display: inline-block;
+}
+
+.centered{
+    text-align: center;
+}
+
+/* page structure end */
+
+
+/* header */
+
+#header ul{
+    position: relative;
+    width: auto;
+    display: inline-block;
+    color:  rgb( 37,  62, 153);
+    font-weight: bolder;
+    font-size: 25px;
+
+}
+#nav_bar a{
+    font-family: 'myriadpro', 'benchnineregular',helvetica;  
+    text-transform: uppercase;
+    color: inherit;
+    text-decoration: none;
+}
+#nav_bar a:hover{
+    text-decoration: underline;
+}
+
+#header ul li{
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+
+}
+
+#trusted{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-family: 'benchnineregular', helvetica;
+    font-size:20px;
+    color: rgb( 0,  42, 127);
+}
+
+#trusted td{
+    padding: 0px 25px 0px 25px;
+}
+
+#trusted td:first-child{
+    border-right: 1px solid rgb(190, 190, 190);
+}
+
+.sim_head{
+     font-family: 'myriadpro',benchnineregular, sans-serif; 
+    font-size: 28px;
+}
+
+/* header end */
+
+
+/* upper bod start */
+
+#banner_contain{
+    background: rgb(21,  51, 124) url(/ccl_004/img/main-image.png) no-repeat;
+    min-height: 325px;
+    width: 929px;
+    margin: 0 auto 0 auto;
+    padding: 10px 10px 10px 30px;
+}
+
+.left_pane_upper_bod{
+    margin-top: 20px;
+    vertical-align: top;
+    display: inline-block;
+    width: 579px;
+}
+
+.mark_blue_bod .emph, .emphasis{
+    font-weight: bold;
+}
+
+.emph{
+    color: rgb(100, 100, 100);
+}
+
+.emphasis{
+    color: rgb(70, 70, 70);
+}
+
+.mark_blue:last-child{
+    margin-bottom: 0 !important;
+}
+
+#bills_weighing{
+    font-size: 60px;
+    color: white;
+    text-shadow: 0px 0px 4px black;
+    text-transform: uppercase;
+    margin: 0 0 20px 0px;
+    font-family: 'benchnineregular', sans-serif;  
+    
+}
+#short-term-loan{
+    color: white;
+    text-shadow: 0px 0px 4px black;
+    font-size: 29px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+#borrow_from{
+    color: white;
+    text-shadow: 0px 0px 4px black;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'benchnineregular', sans-serif;
+}
+.right_pane_upper_bod{
+    width: 345px;
+    display: inline-block;
+}
+#table_under_banner{
+    width: 970px;
+    margin: 0px auto;
+    border: 1px rgb(200, 200, 200) solid;
+    border-top: 0;
+    text-align: left;
+    font-size: 13px;
+    vertical-align: top;
+    line-height: 17px;
+}
+
+#table_under_banner tr:first-child{
+    font-size:17px;
+}
+#atlas_cash_loans{
+    color: rgb(28,  41, 133);
+
+}
+
+#table_under_banner tr:first-child td{
+    border-bottom: 1px rgb(200, 200, 200) solid;
+    padding: 10px 15px;
+    font-weight: normal;
+}
+#table_under_banner td{
+    padding: 15px;
+    vertical-align: top;
+    font-weight: bold !important;
+}
+
+#table_under_banner tr .blue_background{
+    background: rgb( 4, 43, 127);
+    color: white;
+    width: 225px;
+}
+#table_under_banner tr .gray_background{
+    background: rgb( 240, 240, 240);
+    color: rgb(119, 123, 122);
+    border-left: 1px rgb(200, 200, 200) solid; 
+    width: 220px;
+}
+/* upper bod end */
+
+/* lower bod start */
+
+#lower_bod{
+    position: relative;
+    vertical-align: top;
+    width: 940px;
+    border:1px rgb(200, 200, 200) solid;
+    margin: 40px auto;
+    padding: 10px 10px 10px 20px;
+}
+
+.left_pane_lower_bod{
+    color: rgb( 0,  42, 127);
+    vertical-align: top;
+    display: inline-block;
+    width: 625px;
+    margin: 0px 10px 0px 0px;
+    font-size: 14px;
+}
+
+.right_pane_lower_bod{
+    vertical-align: top;
+    width: 300px;
+    display: inline-block;
+}
+
+.left_pane_lower_bod .section{
+    margin: 20px 0px;
+}
+
+.left_pane_lower_bod .section h2{
+    font-weight: bold;
+    margin: 16px 0px;
+    font-size: 18px;
+}
+.left_pane_lower_bod .section h1{
+    margin: 20px 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.left_pane_lower_bod .section p{
+    color: rgb( 0,  42, 127);
+    font-weight: normal;
+    line-height: 16px;
+}
+
+.right_pane_lower_bod .mark_blue{
+    width: 300px;
+    border: 1px rgb(200, 200, 200) solid;
+    margin: 0px 0px 20px 0px;
+}
+
+.right_pane_lower_bod .mark_blue .mark_blue_header{
+    background-color: rgb( 41,  76, 147);
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    margin: 0 0 0 0;
+    font-size: 18px
+}
+
+.right_pane_lower_bod .mark_blue .mark_blue_bod{
+    padding: 25px;
+    color: gray;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.right_pane_lower_bod .mark_blue .mark_blue_bod ul li{
+    background:  url('/ccl_004/img/sprites.png') -427px -185px no-repeat;
+    padding: 4px 0 4px 30px;
+    margin: 5px 0px;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+/* upper bod start */
+
+/* footer */
+
+.legal{
+    padding: 0 0 10px 0;
+    font-size: 13px;
+    border-bottom: 1px rgb(200, 200, 200) solid;
+}
+
+.legal p{
+    margin:14px 15px;
+    text-align: center;
+    color: gray;
+    font-weight: lighter;
+}
+
+
+#foot_disclaimer{
+    background: url('/ccl_004/img/sprites.png') 620px 0px no-repeat;
+    padding:15px;
+    font-size: 12px;
+    color: gray;
+    margin-top: 20px;
+}
+
+/* footer end */
+
+/* custom dropdown */
+
+.rbm-dropdown-class{
+    background: url('/ccl_004/img/sprites.png') 101% -159px no-repeat;
+    border: 1px solid rgb(150, 150, 150) !important;
+    border-radius: 3px;
+    padding: 5px 3px 5px 2px;
+    position: relative;
+}
+.rbm-dropdown-class span{
+    margin-left: 8px;
+}
+.rbm-drop-list{
+    z-index: 100;
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: black 0px 0px 3px;
+    border: solid thin gray;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.rbm-drop-list li{
+    padding: 4px;
+}
+.rbm-drop-list li:hover, .rbm-drop-list .selected{
+    background: #79b7e7;
+    color:white;
+}

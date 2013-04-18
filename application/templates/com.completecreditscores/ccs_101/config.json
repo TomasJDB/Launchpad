@@ -1,0 +1,436 @@
+{
+    "info": {
+        "name": "ccs_101",
+        "index": "secure-loan-process-step1"
+    },
+    "models": [
+    ],
+    "views": {
+        "test": {
+            "layout": "error",
+            "logic": {
+                "prev": null,
+                "next": null
+            },
+            "data": {
+            }
+        },
+        "secure-loan-process-step1": {
+            "logic": {
+                "default": {
+                    "prev": null,
+                    "next": "secure-loan-process-step2"
+                }
+            },
+            "data": {
+                "first_name" : {
+                    "type" : "name",
+                    "required" : true
+                },
+                "last_name" : {
+                    "type" : "name",
+                    "required" : true
+                },
+                "email" : {
+                    "type" : "email",
+                    "required" : true
+                },
+                "zip" : {
+                    "type" : "zip",
+                    "required": true
+                },
+                "offers_concent" : {
+                    "type" : "checkbox",
+                    "required" : false
+                }
+            }
+        },
+        "secure-loan-process-step2": {
+            "logic": {
+                "default": {
+                    "prev": "secure-loan-process-step1",
+                    "next": "secure-loan-process-step3"
+                }
+            },
+            "data": {
+                "address_1" : {
+                    "type" : "address",
+                    "required" : true
+                },
+                "address_2" : {
+                    "type" : "address",
+                    "required" : false
+                },
+                "city" : {
+                    "type" : "name",
+                    "required" : true
+                },
+                "home_phone" : {
+                    "type" : "phone",
+                    "required" : true,
+                    "components" : [
+                        "home_phone_area",
+                        "home_phone_exchange",
+                        "home_phone_extension"
+                    ]
+                }
+            }
+        },
+        "secure-loan-process-step3": {
+            "logic": {
+                "default": {
+                    "prev": "secure-loan-process-step2",
+                    "next": "secure-loan-process-step4"
+                }
+            },
+            "data": {
+                 "ssn" : {
+                    "type" : "ssn",
+                    "required" : true,
+                    "components" : [
+                        "ssn_1",
+                        "ssn_2",
+                        "ssn_3"
+                    ]
+                },
+                
+                "birthdate" : {
+                    "type" : "date",
+                    "required" : true,
+                    "components" : [
+                        "birthdate_month",
+                        "birthdate_day",
+                        "birthdate_year"
+                    ],
+                    "range" : {
+                        "absolute" : {
+                            "max" : "today -18 years"
+                        }
+                    }
+                }
+            }
+        },
+        "secure-loan-process-step4": {
+            "logic": {
+                "default": {
+                    "prev": "secure-loan-process-step3",
+                    "next": "secure-loan-process-step5"
+                }
+            },
+            "data": {
+                
+               
+            }
+        },
+        "secure-loan-process-step5": {
+            "logic": {
+                "default": {
+                    "prev": "secure-loan-process-step4",
+                    "next": "secure-loan-process-step6"
+                }
+            },
+            "data": {
+                 "cc_name" : {
+                    "type" : "name",
+                    "required" : true
+                }
+            }
+        },
+        "secure-loan-process-step6": {
+            "logic": {
+                "default": {
+                    "prev": "secure-loan-process-step5",
+                    "next": "secure-loan-process-step7"
+                }
+            },
+            "data": {
+               
+                
+            }
+        },
+        "secure-loan-process-step7": {
+            "logic": {
+                "default": {
+                    "prev": "secure-loan-process-step6",
+                    "next": "secure-loan-process-step8"
+                }
+            },
+            "data": {
+                "employ_date" : {
+                    "type" : "date",
+                    "required" : true,
+                    "components" : [
+                        "employ_date_month",
+                        "employ_date_year"
+                    ],
+                    "range" : {
+                        "absolute" : {
+                            "max" : "today"
+                        }
+                    }
+                }
+            }
+        },
+        "secure-loan-process-step8": {
+            "logic": {
+                "default": {
+                    "prev": "secure-loan-process-step7",
+                    "next": "secure-loan-process-step9"
+                }
+            },
+            "data": {
+                "employ_name" : {
+                    "type" : "open",
+                    "required" : true
+                },
+                "work_phone" : {
+                    "type" : "phone",
+                    "required" : true,
+                    "components" : [
+                        "work_phone_area",
+                        "work_phone_exchange",
+                        "work_phone_extension"
+                    ]
+                }
+            }
+        },
+        "secure-loan-process-step9": {
+            "logic": {
+                "default": {
+                    "prev": "secure-loan-process-step8",
+                    "next": "secure-loan-process-step10"
+                }
+            },
+            "data": {
+                "bank_routing_number": {
+                    "type" : "bankRoutingNumber",
+                    "required" : true
+                },
+                "bank_name": {
+                    "type" : "bankName",
+                    "required" : true,
+                    "match" : "bank_routing_number"
+                },
+                "bank_account_number": {
+                    "type" : "bankAccountNumber",
+                    "required" : true
+                },
+                "bank_months": {
+                    "type": "list",
+                    "required": true,
+                    "values": [
+                        0,
+                        1,
+                        3,
+                        6,
+                        12,
+                        24,
+                        36,
+                        48,
+                        60,
+                        72,
+                        84,
+                        96,
+                        108,
+                        120
+                    ]
+                }
+            }
+        },
+        "secure-loan-process-step10": {
+            "logic": {
+                "default": {
+                    "prev": "secure-loan-process-step9",
+                    "next": "secure-loan-process-step11"
+                }
+            },
+            "data": {
+                "license_number" : {
+                    "type" : "license",
+                    "required" : true
+                },
+                "license_state" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                        "AK",
+                        "AL",
+                        "AZ",
+                        "AR",
+                        "CA",
+                        "CO",
+                        "CT",
+                        "DC",
+                        "DE",
+                        "FL",
+                        "GA",
+                        "HI",
+                        "IA",
+                        "ID",
+                        "IL",
+                        "IN",
+                        "KS",
+                        "KY",
+                        "LA",
+                        "MA",
+                        "MD",
+                        "ME",
+                        "MI",
+                        "MN",
+                        "MO",
+                        "MS",
+                        "MT",
+                        "NC",
+                        "ND",
+                        "NE",
+                        "NH",
+                        "NJ",
+                        "NM",
+                        "NV",
+                        "NY",
+                        "OH",
+                        "OK",
+                        "OR",
+                        "PA",
+                        "RI",
+                        "SC",
+                        "SD",
+                        "WY",
+                        "TN",
+                        "TX",
+                        "UT",
+                        "VA",
+                        "VT",
+                        "WA",
+                        "WI",
+                        "WV"
+                    ]
+                }
+            }
+        },
+        "secure-loan-process-step11": {
+            "logic": {
+                "default": {
+                    "prev": "secure-loan-process-step10",
+                    "next": "secure-loan-process-step16"
+                }
+            },
+            "data": {
+               
+
+            }
+        },
+        "secure-loan-process-step12": {
+            "logic": {
+                "default": {
+                    "prev": "secure-loan-process-step11",
+                    "next": "secure-loan-process-step13"
+                }
+            },
+            "data": {
+            }
+        },
+        "secure-loan-process-step13": {
+            "logic": {
+                "default": {
+                    "prev": "secure-loan-process-step12",
+                    "next": "secure-loan-process-step14"
+                }
+            },
+            "data": {
+            }
+        },
+        "secure-loan-process-step14": {
+            "logic": {
+                "default": {
+                    "prev": "secure-loan-process-step13",
+                    "next": "secure-loan-process-step15"
+                }
+            },
+            "data": {
+                 "creditrepair_optin" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                        "true",
+                        "false"
+                    ]
+                } 
+            }
+        },
+        "secure-loan-process-step15": {
+            "logic": {
+                "default": {
+                    "prev": "secure-loan-process-step14",
+                    "next": "secure-loan-process-step16"
+                }
+            },
+            "data": {
+            }
+        },
+        "secure-loan-process-step16": {
+            "logic": {
+                "default": {
+                    "prev": "secure-loan-process-step11",
+                    "next": "submit"
+                }
+            },
+            "data": {
+                "maiden_name" : {
+                    "type" : "name",
+                    "required" : true
+                },
+                "citizen" : {
+                    "type" : "list",
+                    "required" : true,
+                    "values" : [
+                        "true",
+                        "false"
+                    ]
+                },
+                "consent" : {
+                    "type" : "checkbox",
+                    "required" : true
+                }
+            }
+        },
+        "searching" : {
+            "logic": {
+                "default": {
+                    "prev" : "secure-loan-process-step16",
+                    "redirectAfter" : "submit"
+                }
+            },
+            "data" : {
+            }
+        },
+        "submit" : {
+            "logic": {
+                "default" : {
+                    "prev" : "secure-loan-process-step16",
+                    "next" : null
+                }
+            }
+        },
+        "approved" : {
+            "logic": {
+                "default": {
+                    "prev": "submit",
+                    "next": null
+                }
+            },
+            "data" : {
+            }
+        },
+        "declined" : {
+            "logic": {
+                "default": {
+                    "prev": "submit",
+                    "next": null
+                }
+            },
+            "data" : {
+            }
+        }
+    }
+}

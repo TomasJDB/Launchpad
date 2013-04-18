@@ -1,0 +1,22 @@
+.png{behavior: url("/sds_001/img/iepngfix.htc")}
+
+.information_bg{*background:none; 
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/sds_001/img/start_bg.png',sizingMethod='scale'); 
+}
+.information_left_bar{*background:none; 
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/sds_001/img/start_left.png',sizingMethod='scale'); 
+}
+.information_right_bar{*background:none; 
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/sds_001/img/start_right.png',sizingMethod='scale'); 
+}
+
+
+
+
+
+
+
+
+
+
+

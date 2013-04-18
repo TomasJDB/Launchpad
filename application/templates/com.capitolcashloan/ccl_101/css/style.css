@@ -1,0 +1,1019 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'arialMTblock';
+    src: url('/ccl_101/css/arialmtblock.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* CSS Reset */
+css_html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-weight:normal;
+	vertical-align: baseline;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	text-decoration:none;
+}
+a {
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+:focus {
+	outline: 0;
+}
+.clr {
+	clear: both;
+}
+.bld {
+	font-weight: bold;
+}
+.i {
+	font-style: italic;
+}
+.white {
+	color: #fff;
+}
+/* body */
+body {
+	background: #fff;
+}
+
+/* wrapper */
+#wrapper {
+	width: 100%;
+}
+
+/* top menu */
+#top-menu {
+	width: 100%;
+	background: #3a710d;
+	height: 25px;
+	padding: 5px 0 0 0;
+	text-align: center;
+}
+#top-menu ul {
+}
+#top-menu ul li {
+	list-style: none;
+	display: inline;
+	padding: 0 10px 0 0;
+}
+#top-menu ul li a {
+	color: #fff;
+	font: 12px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	padding: 0 0 1px 0;	
+	text-align: center;
+}
+
+#top-menu ul li a:hover {
+	text-decoration: none;
+	background: url(/ccl_101/img/dot.gif) 0 100% repeat-x;
+}
+
+#bg-main {
+	background: url(/ccl_101/img/bg.jpg) 50% -30px no-repeat;
+	height: 630px;
+	box-shadow: 0 -2px 6px #34680a;
+}
+
+/* logo and slogan */
+#wr-logo {
+	width: 945px;
+	margin: 0 auto;
+	border: 0px solid red;
+}
+.logo {
+	width: 197px;
+	height: 53px;
+	margin: 30px auto;
+	float: left;
+}
+.slogan {
+	font: 18px Arial, Helvetica, sans-serif;
+	float: right;
+	margin: 50px 0 0 0;
+	letter-spacing: 1px;
+	color: #171717
+}
+
+/* content */
+#content {
+	width: 945px;
+	margin: 0 auto;
+}
+h1 {
+	color: #fff;
+	font: bold 22px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#hand-money {
+	background: url(/ccl_101/img/hand-money.png) 100% 0 no-repeat;
+	height: 50px;
+	width: 255px;
+	padding: 330px 0 0 50px;
+	margin: 40px 0 0 0;
+	position: absolute;
+	border: 0px solid red;
+}
+#wr-form {
+	width: 350px;
+	float: left;
+	border: 0px solid red;
+	margin: 0 0 0 270px;
+	position: absolute;
+}
+#form-title-top {
+	width: 332px;
+	height: 144px;
+	background: url(/ccl_101/img/bg-form-title.png) 50% 0  no-repeat;
+	border: 0px solid lime;
+	margin: 0 auto;
+}
+.need-cash {
+	font: 40px 'arialMTblock';
+	color: #f3f3f3;
+	text-align: center;
+	line-height: 50px;
+	padding: 7px 0 0 0;
+	text-shadow: 1px 1px 3px #333;
+}
+.borrom-from {
+	font: 19px 'arialMTblock';
+	color: #f3f3f3;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 1px 1px 3px #333;
+}
+.upto5 {
+	font: 45px 'arialMTblock';
+	color: #f3f3f3;
+	line-height: 50px;
+	text-shadow: 1px 1px 3px #333;
+	text-align: right;
+	padding: 0 30px 0 0;
+}
+.arrow {
+	position: absolute;
+	background: url(/ccl_101/img/arrow-yellow-down.png) 0 0 no-repeat;
+	width: 91px;
+	height: 61px;
+	margin: 96px 0 0 40px;
+}
+
+/**/
+#content-c {
+	width: 292px;
+	padding: 5px;
+	background: #fff;
+	margin: 0 auto;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: 0 1px 3px #ccc;
+	border: 0px solid red;
+}
+#content-c-shadow,
+#content-c-shadow-r {
+	width: 13px;
+	height: 405px;	
+	border: 0px solid red;
+	
+}
+#content-c-shadow {
+	background: url(/ccl_101/img/bg-shadow.png) 0 0 no-repeat;
+	float: left;
+	margin: 0 0 0 11px;
+}
+#content-c-shadow-r {
+	background: url(/ccl_101/img/bg-shadow-r.png) 0 0 no-repeat;
+	border: 0px solid red;
+	float: left;
+	margin: 145px 0 0 596px;
+}
+#content-c-in {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.title {
+	display: block;
+	text-align: center;
+	color: #515151;
+	font: bold 13px Arial, Helvetica, sans-serif;
+	margin: 0 0 5px 0;
+}
+#form-title-pane {
+	width: 280px;
+	height: 41px;
+	background: #ededed;
+	padding: 10px 5px;
+	border: 1px solid #ededed;
+
+}
+#progressbar {
+  background: url(/ccl_101/img/bg-progress-blue.gif) 0 0 repeat-x #5195b4;
+  border-radius: 13px; 
+	border-bottom: 1px solid #fff;
+	margin: 10px 0 0 0;
+}
+#progressbar div {
+   background: url(/ccl_101/img/bg-progress-yellow.gif) 0 0 repeat-x;
+   width: 20%; 
+   height: 10px;
+   border-radius: 10px;
+}
+form {
+	background: #fafbfb;
+	border: 1px solid #dedfdf;
+	margin: 0 auto;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+select,
+input {
+	border: 1px solid #acacac;
+	border-radius: 3px;
+	color: #484848;
+	margin: 5px 0 0 0;
+}
+input {
+	width: 110px;
+	height: 18px;
+}
+select {
+	width: 130px;
+	height: 28px;
+}
+.check-box {
+	width: 15px;
+	height: 15px;
+	margin: 10px 0 0 0;
+	padding: 0;
+	float: left;
+	border: 0;
+}
+.check-box-desc {
+	color: #6c6c6c;
+	font: 11px Arial, Helvetica, sans-serif;
+	float: left;
+	margin: -15px 0 0 20px;
+}
+.check-box-desc a {
+	color: #4343f2;
+	text-decoration: underline;
+}
+.sel2 {
+	width: 270px;
+}
+label {
+	font: bold 12px Arial, Helvetica, sans-serif;
+	color: #114662;
+	text-shadow: 0 1px 0 #fff;
+}
+.form-el-pane {
+	width: 130px;
+	float: left;
+	margin: 10px 0 5px 10px;
+}
+.form-el-pane2 {
+	width: 270px;
+	float: left;
+	margin: 10px 10px;
+}
+#btn-pane {
+	width: 290px;
+	height: 55px;
+	background: url(/ccl_101/img/bg-btn-pane.png) 0 0 no-repeat #f7f7f7;
+	border-top: 1px solid #dedfdf;
+	margin: -70px 0 0 0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.btn-next {
+	width: 120px;
+	height: 36px;
+	background: url(/ccl_101/img/bg-button.gif) 0 50% repeat-x;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #ccc;
+	margin: 10px 0 0 150px;
+	padding: 0 0 0 20px;
+	color: #fff;
+	text-shadow: 0 1px 2px #aa720c;
+	font: 20px 'arialMTblock';
+	text-align: left;
+	cursor: pointer;
+}
+.btn-next:hover {
+	box-shadow: 0 0 10px #3a710d;
+	border-radius: 10px;
+}
+
+/* right side content */
+#content-r {
+	width: 295px;
+	float: right;
+}
+#secure {
+	width: 250px;
+	height: 45px;
+	background: #fff;
+	opacity: .9;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	border-radius: 10px;
+	box-shadow: 0 0 5px #677d82;
+	padding: 10px 20px;
+	margin: 50px 0 0 0;
+}
+h1.blue {
+	color: #1a80b6;
+	font-size: 20px;
+}
+h2 {	
+	font-size: 15px;
+}
+.orange {
+	color: #ff6c00;
+}
+#secure img {
+	margin: 2px 20px 0 0;
+	float: left;
+}
+
+/* as easy as */
+#as-easy-as {
+	width: 250px;
+	height: 210px;
+	margin: 15px 0 30px 0;
+	background: #fff;
+	opacity: .9;
+	border-radius: 10px;
+	box-shadow: 0 0 5px #677d82;
+	padding: 5px 20px;
+}
+.as {
+	color: #003856;
+	font: bold 23px Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin: 10px 0 0 0;
+}
+#as-easy-as ul {
+	margin: 10px 0 0 10px;
+}
+ul li {
+	list-style: none;
+}
+.lst {
+	width: 38px;
+	height: 49px;
+	float: left;
+	background: url(/ccl_101/img/bg-list.png) 50% 50% no-repeat;
+	color: #fff;
+	font: bold 30px Arial, Helvetica, sans-serif;
+	padding: 10px 0 0 20px;
+	margin: 0 10px 0 10px;
+}
+.lst-desc {
+	width: 65px;
+	float: left;
+	text-align: center;
+	font: italic 14px Arial, Helvetica, sans-serif;
+	margin: 0 0 10px 10px;
+	border: 0px solid red;
+}
+.lst-opt {
+	background: url(/ccl_101/img/check.png) 0 0 no-repeat;
+	font: bold 16px Arial, Helvetica, sans-serif;
+	color: #003856;
+	padding: 0 0 0 30px;
+	margin: 4px 0 0 -10px;
+}
+#footer {
+	width: 945px;
+	margin: 70px auto;
+	color: #7c7c7c;
+	font: 11px Arial, Helvetica, sans-serif;
+}
+#footer img {
+	margin: 0 10px 0 0;
+}
+
+/**
+ * Form Content
+ */
+#rbm_personalloan {
+    margin: 0px auto;
+    width: 290px !important;
+    min-height: 100px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    display:inline-block;
+    *display:block;
+    border: none;
+    zoom: 1;
+}
+#rbm_personalloan_header {
+    height: 50px;
+    padding: 10px;
+    background: #EDEDED;
+    border-top: 1px solid #EDEDED;
+    border-left: 1px solid #EDEDED;
+    border-right: 1px solid #EDEDED;
+    text-align: center;
+/*    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #000;
+*/    color: #515151;
+}
+#rbm_personalloan_header p {
+    font-size: 13px;
+    color: #515151;
+    font-family: 'arialMTblock', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+#rbm_personalloan_header .progress {
+    width: 246px;
+    height: 12px;
+    background: url(/ccl_101/img/progress_bar.png) no-repeat;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+#rbm_personalloan_content {
+    border-left: 1px solid #EDEDED;
+    border-right: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+    background-color: #FAFBFB;
+    padding: 5px 5px 0px 5px;
+    z-index: 100;
+}
+#rbm_personalloan_content .section {
+    display: inline-block;
+    margin: 0px 5px 10px 5px;
+    text-align: left;
+    *display: inline;
+    *zoom: 1;
+}
+#rbm_personalloan_content .center {
+    text-align: center;
+}
+#rbm_personalloan_content select {
+    padding: 4px;
+    border: 1px solid #acacac;
+    background: #FAFAFA;
+    border-radius: 2px;
+}
+#rbm_personalloan_content select.half {
+    width: 112px;
+}
+#rbm_personalloan_content select.full {
+    width: 240px;
+}
+#rbm_personalloan_content select.date_drop {
+    width: 95px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+#rbm_personalloan_content input[type=radio] {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#rbm_personalloan_content input[type=text] {
+    padding: 5px;
+    border: 1px solid #acacac;
+    border-radius: 3px;
+    background: #fafafa;
+}
+#rbm_personalloan_content input[type=text].quarter {
+    width: 55px;
+}
+#rbm_personalloan_content input[type=text].half {
+    width: 100px;
+}
+#rbm_personalloan_content input[type=text].full {
+    width: 230px;
+}
+#rbm_personalloan_content input[type=text].calendar {
+    background-image:url(/ccl_101/img/calendar.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding-left:25px;
+}
+#rbm_personalloan_content input[type=text].calendar.quarter {
+    width: 35px;
+}
+#rbm_personalloan_content input[type=text].calendar.half {
+    width: 80px;
+}
+#rbm_personalloan_content input[type=text].calendar.full {
+    width: 210px;
+}
+#rbm_personalloan_content .quarter {
+    width: 65px;
+}
+#rbm_personalloan_content .half {
+    width: 110px;
+}
+#rbm_personalloan_content .full {
+    width: 240px;
+}
+#rbm_personalloan_content label {
+    font-size: 11px;
+    font-weight: bold;
+    color: #1b2a47;
+    display: block;
+    margin: 5px 0px;
+    line-height: 110%;
+}
+#rbm_personalloan_content label span.subheading {
+    font-weight: normal;
+    font-style: italic;
+    color: #999;
+}
+#rbm_personalloan_content .privacy_text {
+    font-size: 11px;
+    font-weight: normal;
+    display: block;
+    margin: 0px;
+    line-height: 100%;
+    width: 215px;
+    float: right;
+    color: #6b6b6b;
+    margin-right: 12px;
+}
+#rbm_personalloan_content .privacy_text a {
+    font-weight: bold;
+    color: #6b6b6b;   
+}
+#rbm_personalloan_content .privacy_text.error a {
+    color: #B94A48;
+}
+#rbm_personalloan_content .debt_consent {
+    width: 215px;
+    float: right;
+    margin: 0px;
+    margin-left: 5px;
+    font-size: 110%;
+    font-weight: bold;
+}
+#rbm_personalloan_content .sm_gray {
+    color: #6b6b6b;
+    font-size: 90%;
+    font-weight: normal;
+}
+#rbm_personalloan_content .lg_gray {
+    color: #6b6b6b;
+    font-size: 120%;
+    font-weight: bold;
+    margin: 0px 2px;
+}
+#rbm_personalloan_content .phone,
+#rbm_personalloan_content .datebox {
+    width: 55px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+#rbm_personalloan_content .datebox {
+    width: 55px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+#rbm_personalloan_content .color_box {
+    border-radius: 3px;
+    background: #394e7b;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    line-height: 150%;
+    
+}
+#rbm_personalloan_content .headline_shadow {
+    color: #2D3E61;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #888;
+    margin-top: 5px;
+}
+#rbm_personalloan_content .emphasis {
+    color: #5D9EBB;
+}
+
+#rbm_personalloan_terms, #rbm_personalloan_consent {
+    position: relative;
+    width: 15px !important;
+    margin-left: 10px;
+    top: -5px;
+}
+
+div.ui-datepicker {
+    font-size: 80% !important;   
+}
+
+#rbm_personalloan_footer {
+    background-color: #F7F7F7;
+    height: 60px;
+    border-left: 1px solid #DEDFDF;
+    border-right: 1px solid #DEDFDF;
+    border-bottom: 1px solid #DEDFDF;
+    padding: 0px;
+}
+#rbm_personalloan_footer input[type=button], #rbm_personalloan_footer input[type=submit] {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 0px;
+    margin: 0px;
+    width: 128px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+}
+#rbm_personalloan_back_btn {
+    float: left;
+    margin: 0px;
+    margin-right: 5px !important;
+    margin-left: 5px;
+    background: url(/ccl_101/img/back_btn.png) no-repeat;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 128px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+}
+#rbm_personalloan_next_btn {
+    background: url(/ccl_101/img/next_btn.png) no-repeat;
+}
+#rbm_personalloan_next_btn.single {
+    margin-left: 135px !important;
+}
+#rbm_personalloan_submit_btn {
+    background: url(/ccl_101/img/submit_btn.png) no-repeat;
+    width: 260px !important;
+    height: 60px !important;
+}
+#rbm_personalloan_privacy_content {
+    width: 480px;
+    height: 540px;
+}
+#rbm_personalloan_conditions_content {
+    width: 480px;
+    height: 540px;
+}
+#rbm_personalloan_check_content {
+    width: 355px;
+    height: 355px;
+}
+#rbm_personalloan_ssn_content {
+    width: 355px;
+    height: 355px;
+}
+
+#rbm_personalloan_content .errorBox {
+    width: 230px;
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+    *display: inline;
+    *zoom: 1;
+    background: #F2DEDE;
+    border: 1px solid #B94A48;
+    border-radius: 4px;
+    padding: 5px;
+    color: #B94A48;
+    font-size: 12px;
+    z-index: 10;
+}
+
+#rbm_personalloan_content .errorBox h2 {
+    background:  url(/ccl_101/img/error_x_sm.png) no-repeat top left;
+    padding-left: 18px;
+    font-weight: bold;
+    font-size: 110%;
+    margin-bottom: 5px;
+    z-index: 20;
+}
+
+#rbm_personalloan_content .errorBox ul,
+#rbm_personalloan_content .errorBox ul li {
+    list-style-position: inside !important;
+    z-index: 30;
+}
+#rbm_personalloan_content .error {
+    color: #B94A48;
+}
+#rbm_personalloan_content select.error,
+#rbm_personalloan_content input[type=checkbox].error,
+#rbm_personalloan_content input[type=text].error {
+    border: 1px solid #B94A48;
+}
+
+.rbm_personalloan_overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    background: url(/ccl_101/img/blk_bg.png) repeat;
+    z-index: 200;
+    display: none;    
+}
+.rbm_personalloan_overlay_content {
+    position: relative;
+    width: 500px;
+    height: 100px;
+    min-height: 500px; /*Prevent IE 8 From crashing when clicked, keep this line */
+    margin: 100px auto;
+    overflow: visible;/*Prevent IE 8 From crashing when clicked, keep this line */
+    text-align: left;
+}
+.rbm_personalloan_overlay_txt {
+    color: black;
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    border: 5px solid #555;
+    overflow: auto;/*Prevent IE 8 From crashing when clicked, keep this line */
+    max-height: 100%;
+}
+.rbm_personalloan_overlay_close {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    background: url(/ccl_101/img/close-btn.png) no-repeat;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+.rbm_personalloan_overlay_content h1 {
+    margin: 10px 0px;
+    font-weight: bold;
+    font-size: 120%;
+    color: #222 !important;
+}
+.rbm_personalloan_overlay_content h2 {
+    margin: 10px 0px;
+    font-size: 110%;
+    font-style: italic;
+}
+.rbm_personalloan_overlay_content p {
+    margin: 10px 0px;   
+}
+
+/**
+ * Plain Page CSS
+ */
+#rbm_personalloan_plain_container {
+    border: 1px solid #dfdfdf;
+    background: #fff;
+    z-index: 100;
+    margin: 0px auto;
+    width: 270px !important;
+    min-height: 300px;
+    text-align: center;
+    font-size: 12px;
+    display:inline-block;
+    *display:block;
+    zoom: 1;
+}
+#rbm_personalloan_plain_container img {
+    margin-bottom: -3px;
+}
+#rbm_personalloan_plain_container .section {
+    width: 270px;
+    display: inline-block;
+    margin: 0px;
+    *display: inline;
+    *zoom: 1;
+}
+#rbm_personalloan_plain_container .center {
+    text-align: center;
+}
+#rbm_personalloan_plain_container .loader {
+    padding: 15px;
+}
+#rbm_personalloan_plain_container ul {
+    list-style-position: outside;
+    list-style-image: url(/ccl_101/img/checkmark_inactive.png) !important;
+    font-style: italic;
+    color: #9d9d9d;
+    margin: 10px;
+    text-align: left;
+}
+#rbm_personalloan_plain_container ul li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+#rbm_personalloan_plain_container ul li.active {
+    list-style-image: url(/ccl_101/img/checkmark_active.png) !important; 
+}
+#rbm_personalloan_plain_container .color_box {
+    width: 260px;
+    background: #1e2a44;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    line-height: 150%;
+}
+#rbm_personalloan_plain_container .fine_print {
+    color: #6b6b6b;
+    padding: 10px;
+    font-size: 90%;
+}
+#rbm_personalloan_plain_container .sm_gray {
+    color: #6b6b6b;
+    margin: 0px 2px;
+}
+#rbm_personalloan_plain_container .lg_gray {
+    color: #6b6b6b;
+    font-size: 120%;
+    font-weight: bold;
+    margin: 0px 2px;
+}
+#rbm_personalloan_plain_container .center {
+    text-align: center;
+}
+#rbm_personalloan_plain_container .padded {
+    padding: 15px;
+}
+#rbm_personalloan_plain_container .headline {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 125%;
+}
+#rbm_personalloan_plain_container .green {
+    color: #74934d;
+}
+#rbm_personalloan_plain_container .navy {
+    color: #1e2a44;
+}
+#rbm_personalloan_plain_container .teal {
+    color: #4896ad;
+}
+#rbm_personalloan_plain_container .red {
+    background: #9B2426;
+}
+
+/** Lightbox **/
+#rbm_personalloan_lightbox_content {
+    width: 625px;
+    height: 540px;
+    margin-top: 100px !important;
+}
+#lb-top-1 {
+    background: url(/ccl_101/img/bg-top1.png) 0 0 repeat;
+    height: 78px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #c9763b;
+}
+#lb-top-2 {
+    background: url(/ccl_101/img/bg-top.png) 0 0 repeat;
+    border-bottom: 1px solid #7d2006;
+    height: 45px;
+}
+#lb-top-1 div {
+    background: url(/ccl_101/img/woman.png) -10px 0 no-repeat;
+    position: absolute;
+    height: 145px;
+    width: 249px;
+}
+h1.lb-status,
+h1.lb-status_small {
+    background: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 3px 5px #693b19;
+    color: #9b9b9b;
+    display: block; 
+    margin: 0 auto;
+    padding: 4px 25px;
+    
+}
+h1.lb-status {
+    font: bold 17px Arial, Helvetica, sans-serif;
+    width: 250px;
+}
+h1.lb-status_small {
+    font: bold 14px Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 200px;
+}
+.green {
+    color: #6fbd45;
+}
+.blue {
+    color: #2c6ba9;
+}
+.close,
+.close_small {
+    background: url(/ccl_101/img/close.png) 50% 50% no-repeat;
+    border-radius: 25px;
+    border: 5px solid #fff;
+    height: 18px;
+    position: absolute;
+    width: 18px;
+}
+.close {
+    margin: -15px 0 0 615px;
+}
+.close_small {
+    cursor: pointer;
+    margin: -15px 0 0 290px;
+    text-indent: 100;
+}
+h2.lb-secure,
+h2.lb-secure_small {
+    color: #fff;    
+    text-shadow: 0 1px 2px #693b19;
+}
+h2.lb-secure {
+    font: 16px Arial, Helvetica, sans-serif;
+    margin: 12px 0 0 165px;
+}
+h2.lb-secure_small {
+    font: 15px Arial, Helvetica, sans-serif;
+    margin: 20px 5px 0 5px;
+    text-align: center;
+}
+h3.lb-wait,
+h3.lb-wait_small {
+    color: #fff;
+    text-shadow: 0 1px 2px #693b19;
+}
+h3.lb-wait {
+    font: 18px Arial, Helvetica, sans-serif;
+    padding: 10px 0 0 165px;
+}
+h3.lb-wait_small {
+    font: 14px Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5px 0 0 0;
+}
+.lb-txt,
+.lb-txt2 {
+    line-height: 18px;
+    margin: 20px 0;
+    padding: 0 20px;
+    text-align: center; 
+}
+.lb-txt {
+    font: bold 13px Arial, Helvetica, sans-serif;
+}
+.lb-txt2 {
+    font: bold 16px Arial, Helvetica, sans-serif;
+}
+.lb-txt2_small {
+    font: bold 14px Arial, Helvetica, sans-serif;
+}
+#lb-wr-load {
+    border-radius: 3px;
+    margin: 0 auto;
+    
+}
+#lb-wr-load {
+    height: 30px;
+    width: 240px;
+}
+#lb-wr-load div {
+    background: url(/ccl_101/img/loading.png) 50% 0 no-repeat;
+    border: 1px solid #a7c7d6;
+    border-radius: 3px;
+    height: 25px;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+/* footer */
+#lb-footer {
+    background: url(/ccl_101/img/bg-lb-footer.png) 0 0 repeat-x #f6f6f6;
+    color: #909090;
+    text-align: center;
+    font: 12px Arial, Helvetica, sans-serif;
+    line-height: 16px;
+    padding: 12px 20px 10px 20px;
+}
+#lb-footer h4 {
+    background: url(/ccl_101/img/bg-lb-footer-title.png) 0 100% repeat-x;
+    display: block;
+    font: bold 15px Arial, Helvetica, sans-serif;
+    padding: 0 30px 12px 30px;
+    margin: 0 auto 10px auto;
+    text-shadow: 0 1px 0 #fff;
+    width: 510px;
+}

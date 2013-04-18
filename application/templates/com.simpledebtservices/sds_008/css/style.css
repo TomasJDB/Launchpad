@@ -1,0 +1,182 @@
+/* CSS Reset (Eric Meyer) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, form, label, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	margin: 0;
+	padding: 0
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none
+}
+blockquote, q {
+	quotes: none
+}
+:focus {
+	outline: 0;
+}
+ins {
+	text-decoration: none
+}
+del {
+	text-decoration: line-through
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Custom checkbox and radio styles */
+
+fieldset {
+	border: none;
+	margin-top: 8px;
+	padding-top: 10px;
+	color: #fff;
+	font-weight: bold;
+}
+fieldset p {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 200px;
+	float: left;
+}
+fieldset input[type=text], fieldset input[type=email] {
+	border: 1px solid #ccc;
+	line-height: 20px;
+	padding: 3px;
+	width: 200px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+label + p, input + p {
+	margin-top: 20px;
+}
+p > input {
+	padding: 0;
+	margin: 0;
+	height: 16px;
+	width: 16px;
+	float: left;
+	position: absolute;
+	left: 0;
+	opacity: 1;
+	bottom: 15px;
+}
+p > label {
+	float: left;
+	line-height: 16px;
+	color: #fff;
+	padding: 0 0 0 18px;
+	-moz-transition: color 1s ease;
+	-o-transition: color 1s ease;
+	-webkit-transition: color 1s ease;
+	transition: color 1s ease;
+}
+p:not(#foo) > input:hover + label, p:not(#foo) > input:focus + label, p:not(#foo) > input + label:hover, p:not(#foo) > input:focus + label {
+	text-shadow: 1px 1px 3px #000;
+	color: #2C7AD0;
+}
+p:not(#foo) > input + label {
+/*	background: url('/sds_008/img/gr_custom-inputs.png') 0 -1px no-repeat;*/
+	float: left;
+	height: 16px;
+	margin: 0 -30px 15px;
+	padding-left: 50px;
+}
+p:not(#foo) > input[type=checkbox]:checked + label {
+	background-position: 0 -81px;
+}
+p:not(#foo) > input[type=checkbox]:hover:checked + label, p:not(#foo) > input[type=checkbox]:focus:checked + label, p:not(#foo) > input[type=checkbox]:checked + label:hover, p:not(#foo) > input[type=checkbox]:focus:checked + label {
+	background-position: 0 -101px;
+}
+p:not(#foo) > input[type=checkbox]:hover + label, p:not(#foo) > input[type=checkbox]:focus + label, p:not(#foo) > input[type=checkbox] + label:hover {
+	background-position: 0 -21px;
+}
+p:not(#foo) > input[type=checkbox]:active + label, p:not(#foo) > input[type=checkbox] + label:hover:active {
+	background-position: 0 -41px;
+}
+p:not(#foo) > input[type=checkbox]:active:checked + label, p:not(#foo) > input[type=checkbox]:checked + label:hover:active {
+	background-position: 0 -121px;
+}
+p:not(#foo) > input[type=checkbox]:disabled + label, p:not(#foo) > input[type=checkbox]:hover:disabled + label, p:not(#foo) > input[type=checkbox]:focus:disabled + label, p:not(#foo) > input[type=checkbox]:disabled + label:hover, p:not(#foo) > input[type=checkbox]:disabled + label:hover:active {
+	background-position: 0 -61px;
+}
+p:not(#foo) > input[type=checkbox]:disabled:checked + label, p:not(#foo) > input[type=checkbox]:hover:disabled:checked + label, p:not(#foo) > input[type=checkbox]:focus:disabled:checked + label, p:not(#foo) > input[type=checkbox]:disabled:checked + label:hover, p:not(#foo) > input[type=checkbox]:disabled:checked + label:hover:active {
+	background-position: 0 -141px;
+}
+@font-face {
+	font-family: 'Cantarell';
+	src: url(../fonts/Cantarell-Regular.eot);
+	src: local('Cantarell'), url('../fonts/Cantarell-Regular.ttf') format('truetype');
+}
+body {
+	height: 100%;
+	background-color: #c5c5c5;
+	color: #696969;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner {
+	border: none;
+}
+input[type="submit"]:focus, input[type="button"]:focus {
+	outline: none;
+}
+.clear {
+	clear: both;
+}
+#container {
+	height: 310px;
+	margin: auto;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 645px;
+	top: 30px;
+}
+#container h1, #container h2 {
+	font-size: Cantarell, Verdana, sans-serif;
+	text-align: center;
+	font-size: 24px;
+	text-shadow: 1px 1px 2px #222;
+}
+#container h1 span {
+	color: #a90329;
+}
+#container h2 {
+	color: #888;
+	font-size: 20px;
+	text-align: left;
+	text-shadow: none;
+}
+#container table {
+	margin: 20px 40px;
+	font-size: 14px;
+	font-weight: bold;
+}
+#container table td {
+	padding: 3px 8px;
+}
+#container table td:nth-child(2) {
+	color: #a90329;
+}
+#container input.submit:focus {
+	border: none;
+}
+#container input.error {
+	border: 1px solid red;
+}
+#container input.valid {
+	border: 1px solid #1FFF00;
+}
+#container input:focus, #container select:focus {
+	border: 1px solid #a90329;
+	color: #a90329;
+}
